@@ -1,5 +1,15 @@
 import random
-from random import choice
-juego_pc=choice("piedra","papel","tijera","lagarto","spock")
-juego_jugador=input()
-#basicosPedronuevo
+opciones = ["piedra","papel","tijera","lagarto","spock"]
+jugador = input("Eliga una de las opciones")
+pc = random.choice(opciones)
+if jugador not in opciones:
+    print("Opción inválida")
+else:
+    if jugador == pc:
+        print("Empate")
+    elif jugador == "tijera" and pc in ["papel","lagarto"]:
+        print("ganaste")
+    #aca van todos los elif
+    else:
+        print("pc eligio", pc)
+        print("perdiste")
