@@ -23,4 +23,4 @@ else:
     else:
         print("PC eligio", pc)
         print("perdiste")
-print("Vuelve a jugar!")
+print("Vuelve a jugar mañana!")
