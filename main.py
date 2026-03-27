@@ -22,3 +22,4 @@ else:
     else:
         print("PC eligio", pc)
         print("perdiste")
+print("Vuelve a jugar!")
