@@ -1,5 +1,6 @@
 import random
 opciones = ["piedra","papel","tijera","lagarto","spock"]
+print("Opciones: piedra,papel,tijera,lagarto,spock")
 jugador = input("Eliga una de las opciones: ")
 pc = random.choice(opciones)
 if jugador not in opciones:
