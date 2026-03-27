@@ -7,17 +7,17 @@ if jugador not in opciones:
 else:
     #aca van todos los elif
     if jugador == pc:
-        print("Empate")
+        print("Empate, los dos tiraron: "+pc)
     elif jugador == "tijera" and pc in ["papel","lagarto"]:
-        print("ganaste")
+        print("ganaste, tijera le gana a "+pc)
     elif jugador == "papel" and pc in ["piedra","spock"]:
-        print("ganaste")
+        print("ganaste, papel le gana a "+pc)
     elif jugador == "piedra" and pc in ["lagarto","tijera"]:
-        print("ganaste")
+        print("ganaste,  piedra le gana a "+pc)
     elif jugador == "lagarto" and pc in ["spock","papel"]:
-        print("ganaste")
+        print("ganaste,  lagarto le gana a "+pc)
     elif jugador == "spock" and pc in ["tijera","piedra"]:
-        print("ganaste")
+        print("ganaste,  spock le gana a "+pc)
     else:
         print("PC eligio", pc)
         print("perdiste")
